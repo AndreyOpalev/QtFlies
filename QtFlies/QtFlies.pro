@@ -9,10 +9,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    fly.cpp \
+    flyworld.cpp \
     main.cpp \
     main_widget.cpp
 
 HEADERS += \
+    fly.h \
+    flyworld.h \
     main_widget.h
 
 # Default rules for deployment.
