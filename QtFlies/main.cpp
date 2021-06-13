@@ -6,11 +6,11 @@
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
-  //  Widget w;
-  //  w.show();
-
-  FlyWorld world(2);
+  FlyWorld world;
   world.addFly();
-  world.run();
+
+  Widget w(world);
+  w.show();
+
   return a.exec();
 }

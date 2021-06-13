@@ -10,16 +10,25 @@ CONFIG += c++11
 
 SOURCES += \
     fly.cpp \
+    fly_graphic_item.cpp \
     flyworld.cpp \
     main.cpp \
-    main_widget.cpp
+    main_widget.cpp \
+    world_scene.cpp \
+    world_view.cpp
 
 HEADERS += \
     fly.h \
+    fly_graphic_item.h \
     flyworld.h \
-    main_widget.h
+    main_widget.h \
+    world_scene.h \
+    world_view.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+  images.qrc
